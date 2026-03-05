@@ -1,3 +1,3 @@
 *** Variables ***
-${USERNAME}     qatestuser@maximus.com.nyqa
+${USERNAME}    qatestuser@maximus.com.nyqa
 ${PASSWORD}    ${SALESFORCE_PASSWORD}
