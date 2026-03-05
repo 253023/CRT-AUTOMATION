@@ -12,9 +12,9 @@ Suite Teardown    Close Browser
 
 *** Test Cases ***
 Add Nurse Test
-    Given user on a field Screen
-    When user select Automation
-    # Then nurse should be created successfully
+    Given user landed on all service resource page
+    When User verify and select automation resource
+    And user scroll to related field
 
 
 *** Keywords ***
