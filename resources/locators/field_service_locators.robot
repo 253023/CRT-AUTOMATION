@@ -1,4 +1,5 @@
 *** Variables ***  
+${all_service_resource_page}    All Service Resources
 ${automation}    Automation
 ${field_service_tab}    Service Resources
 ${service_resources}    xpath=//span[text()='Service Resources']
