@@ -1,6 +1,6 @@
 *** Settings ***
-Library                    SeleniumLibrary
-Resource                   ../locators/field_service_locators.robot
+Library    SeleniumLibrary
+Resource    ../locators/field_service_locators.robot
 
 # You can change imported library to "QWeb" if testing generic web application, not Salesforce.
             
