@@ -16,7 +16,7 @@ Add Nurse Test
     When User verify and select automation resource
     And user scroll to related field
     And User click on related tab
-    Then User verify Service resource skill is display
+    Then user verify and select service resource skill
     And User verify and select new button display
 
 
@@ -34,7 +34,7 @@ And user click on related tab
     And User click on related tab
 
 Then user verify and select service resource skill
-    Then User verify Service resource skill is display
+    Then user verify and select service resource skill
 
 And user verify and select new new_button
     And User verify and select new button display
