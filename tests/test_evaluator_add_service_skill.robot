@@ -5,12 +5,13 @@ Resource    ../resources/keywords/login_details_keywords.robot
 Resource    ../resources/config/global_variables.robot
 Resource    ../resources/config/environment.robot
 
-Suite Setup   Login To Salesforce
-Suite Teardown    Close Application
+
 
 # You can change imported library to "QWeb" if testing generic web application, not Salesforce.
 
 *** Test Cases ***
+Suite Setup   Login To Salesforce
+Suite Teardown    Close Application
 Add Nurse Test
     Given user on a field Screen
     # When user adds a nurse "CHA" with skill "ICU" starting "02/2/2026" ending "12/31/2026"
