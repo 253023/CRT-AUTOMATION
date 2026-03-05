@@ -7,6 +7,7 @@ Resource     ../config/global_variables.robot
 
 *** Keywords ***
 Login To Salesforce
+    Open Browser    ${URL}    ${BROWSER}
     Input Text                        ${USERNAME_FIELD}      ${USERNAME}
     Input Text                        ${PASSWORD_FIELD}      ${PASSWORD}
     Click Button                      ${LOGIN_BUTTON}
