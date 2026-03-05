@@ -2,8 +2,9 @@
 Library      SeleniumLibrary
 Library      OperatingSystem  
 Resource     ../config/environment.robot
-Resource     ../locators/login_locators.robot
 Resource     ../config/global_variables.robot
+Resource     ../locators/login_locators.robot
+
 
 *** Keywords ***
 Login To Salesforce
