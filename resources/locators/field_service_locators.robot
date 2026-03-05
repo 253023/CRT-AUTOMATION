@@ -5,5 +5,6 @@ ${service_resource_skill_button}    Service Resource Skills
 ${service_resources}    xpath=//span[text()='Service Resources']
 ${drop_down_option}     xpath=//span[text()='Automation']
 ${related_tab}          Related
+${new_button}    New
 ${new_tab}              xpath=//div[text()='New']  
 
