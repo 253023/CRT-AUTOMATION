@@ -16,4 +16,5 @@ Login To Salesforce
     TypeText           ${USERNAME_FIELD}      ${USERNAME}
     TypeSecret         ${PASSWORD_FIELD}      ${PASSWORD}
     ClickText          ${LOGIN_BUTTON}
+    Sleep              10s
    
