@@ -1,13 +1,12 @@
 *** Settings ***
 Library      SeleniumLibrary
 Library      OperatingSystem  
-Library      CryptoLibrary
 Resource     ../config/environment.robot
 Resource     ../locators/login_locators.robot
 
 *** Keywords ***
 Login To Salesforce
-    Wait Until Element Is Visible                ${USERNAME_FIELD}         20s
+    ${PASSWORD}=    Get Variable Value    %{SALESFORCE_PASSWORD}
     Input Text                        ${USERNAME_FIELD}      ${USERNAME}
     Input Text                        ${PASSWORD_FIELD}      ${PASSWORD}
     Click Element                     xpath=//input[@id='Login']
