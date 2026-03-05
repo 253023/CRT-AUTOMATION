@@ -5,20 +5,21 @@ Resource    ../locators/field_service_locators.robot
 
             
 *** Keywords *** ***
-Given user Navigate to Field Screen 
-    ClickText    ${automation}
+Given user landed on all service resource page
+    VerifyText    ${automation}
 
-When User select automation tab
+When User verify and select automation resource
+  VerifyText    ${automation}
+  ClickText    ${automation}
+  
+And User scroll to related field
+  ScrollTo   ${related_tab}
+
+And User click on related tab
   ClickText    ${related_tab}
-  
-  
-And User select resource from list
-  Click Element   ${drop_down_option}
-  Wait Until Page Contains    Automation
 
-And Scoll to Element
-  Scroll Element into View    ${related_tab}
-   
+Then User verify Service resource skill is display
+  VerifyText    ${service_resource_skill_button}       
 # User select related tab
 #   Click Element   xpath=//a[Contains(text()='Related')]
 #    Wait Until Page Contains    Related
