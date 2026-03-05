@@ -13,7 +13,7 @@ When User verify and select automation resource
   ClickText    ${automation}
   
 And User scroll to related field
-  ScrollTo   0    800
+  ScrollTo   ${related_tab}
 
 And User click on related tab
   ClickText    ${related_tab}
