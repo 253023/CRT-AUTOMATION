@@ -5,6 +5,7 @@ Resource    ../resources/keywords/login_details_keywords.robot
 Resource    ../resources/config/global_variables.robot
 Resource    ../resources/config/environment.robot
 
+
 Suite Setup   Login To Salesforce
 Suite Teardown    Close Browser
 
@@ -12,7 +13,7 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 Add Nurse Test
     Given user on a field Screen
-    # When user adds a nurse "CHA" with skill "ICU" starting "02/2/2026" ending "12/31/2026"
+    When user select Automation
     # Then nurse should be created successfully
 
 
@@ -20,6 +21,6 @@ Add Nurse Test
 Given user on a field Screen
     Given user Navigate to Field Screen 
 
-# When user add a nurse "${Name}" with skill "${Skill}" starting "${StartDate}" ending "${EndDate}"
-#     Add 
+When user select Automation
+    When User select automation tab 
     
