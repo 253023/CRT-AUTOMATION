@@ -4,7 +4,6 @@ ${URL}    https://nyia--qa.sandbox.my.salesforce.com/
 ${TIMEOUT}    5s
 # Credentials
 ${USERNAME}    qatestuser@maximus.com.nyqa
-{PASSWORD}    %{SALESFORCE_PASSWORD}
 ${BROWSER}    chrome
 ${USERNAME_FIELD}    id=username_container
 ${PASSWORD_FIELD}    id=password
