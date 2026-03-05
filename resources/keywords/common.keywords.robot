@@ -6,7 +6,7 @@ Resource    ../config/environment.robot
 
 *** Keywords ***
 
-Open BROWSER To Application
+Open Browser To Application
     Open Browser    ${URL}    ${BROWSER}
 
 Close Application
