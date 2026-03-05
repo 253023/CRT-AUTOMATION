@@ -1,5 +1,5 @@
 *** Settings ***
-# Library    SeleniumLibrary
+Library    SeleniumLibrary
 Library    QForce
 Library    String
 Resource    ../config/environment.robot
