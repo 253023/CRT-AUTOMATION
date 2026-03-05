@@ -1,4 +1,4 @@
 *** Variables ***
-${USERNAME_FIELD}    id=username
-${PASSWORD_FIELD}    id=password
-${LOGIN_BUTTON}      id=Login
+${USERNAME_FIELD}    username
+${PASSWORD_FIELD}    password
+${LOGIN_BUTTON}      Log In to Salesforce
