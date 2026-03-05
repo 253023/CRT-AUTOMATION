@@ -28,7 +28,7 @@ When user select Automation
     When User verify and select automation resource
 
 And user scroll down to related field
-    And user scroll down to related field
+    And user scroll to related field
 
 And user click on related tab
     And User click on related tab
