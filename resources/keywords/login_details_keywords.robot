@@ -8,7 +8,7 @@ Resource     ../locators/login_locators.robot
 
 *** Keywords ***
 Login To Salesforce
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser    ${URL}    ${BROWSER}    chrome
     Input Text                ${USERNAME_FIELD}      ${USERNAME}
     Input Text                ${PASSWORD_FIELD}      ${PASSWORD}
     Click Button              ${LOGIN_BUTTON}
