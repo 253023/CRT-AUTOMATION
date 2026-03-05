@@ -19,11 +19,11 @@ And User click on related tab
   ClickText    ${related_tab}
 
 Then User verify Service resource skill is display
-  VerifyText    ${service_resource_skill_button}       
-# User select related tab
-#   Click Element   xpath=//a[Contains(text()='Related')]
-#    Wait Until Page Contains    Related
-   
+  VerifyText    ${service_resource_skill_button}
+
+And User verify and select new button display
+  VerifyText     ${new_button}
+  ClickText      ${new_button}
 # User select new next to service resource skill
 #   Click Element   xpath=//a[Contains(text()='Related')]
 #    Wait Until Page Contains    Related
