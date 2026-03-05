@@ -1,12 +1,13 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    QForce
+Library    String
 Resource    ../locators/field_service_locators.robot
 
 # You can change imported library to "QWeb" if testing generic web application, not Salesforce.
             
 *** Keywords *** ***
 Given user Navigate to Field Screen 
-    Click Element    ${field_service_tab}
+    ClickText    ${field_service_tab}
 
 When User select service resource Tab
   Click Element    ${service_resources}
