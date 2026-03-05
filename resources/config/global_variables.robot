@@ -1,3 +1,3 @@
 *** Variables ***
-${BROWSER}    chrome
-${TIMEOUT}    20s
+${USERNAME}     qatestuser@maximus.com.nyqa
+${PASSWORD}    ${SALESFORCE_PASSWORD}
