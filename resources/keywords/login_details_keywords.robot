@@ -13,7 +13,7 @@ Login To Salesforce
     Open Browser       ${URL}    ${BROWSER}
     # Maximize Browser Window
     # Set Selenium Timeout         ${TIMEOUT}    
-    TypeText           username      ${USERNAME}
-    TypeSecret         password      ${PASSWORD}
-    ClickText          Log In to Sandbox
+    TypeText           ${USERNAME_FIELD}      ${USERNAME}
+    TypeSecret         ${PASSWORD_FIELD}      ${PASSWORD}
+    ClickText          ${LOGIN_BUTTON}
    
