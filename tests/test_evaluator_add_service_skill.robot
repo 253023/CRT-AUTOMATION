@@ -1,13 +1,11 @@
 *** Settings ***
-Library      SeleniumLibrary 
-
 Resource    ../resources/keywords/common.keywords.robot
 Resource    ../resources/keywords/field_service_keywords.robot
 Resource    ../resources/keywords/login_details_keywords.robot
 Resource    ../resources/config/global_variables.robot
 Resource    ../resources/config/environment.robot
 
-Suite Setup   Open Browser To Application
+Suite Setup   Login To Salesforce
 Suite Teardown    Close Application
 
 # You can change imported library to "QWeb" if testing generic web application, not Salesforce.
