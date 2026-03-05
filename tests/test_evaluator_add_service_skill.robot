@@ -15,7 +15,7 @@ Add Nurse Test
     Given user landed on all service resource page
     When User verify and select automation resource
     And user scroll to related field
-
+    And User click on related tab
 
 *** Keywords ***
 Given user on a field Screen
