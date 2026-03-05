@@ -14,6 +14,7 @@ Suite Teardown    Close Application
 
 *** Test Cases ***
 Add Nurse Test
+    Open Browser    about:blank    chrome
     Given user on a field Screen
     # When user adds a nurse "CHA" with skill "ICU" starting "02/2/2026" ending "12/31/2026"
     # Then nurse should be created successfully
