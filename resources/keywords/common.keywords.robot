@@ -8,7 +8,6 @@ Resource    ../config/environment.robot
 
 Open BROWSER To Application
     Open Browser    ${URL}    ${BROWSER}
-    Set Selenium TIMEOUT      ${TIMEOUT}
 
 Close Application
     Close BROWSER
