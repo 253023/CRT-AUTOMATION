@@ -1,4 +1,4 @@
 *** Variables ***
-${USERNAME_FIELD}    id=username_container
+${USERNAME_FIELD}    id=username
 ${PASSWORD_FIELD}    id=password
 ${LOGIN_BUTTON}      id=Login
