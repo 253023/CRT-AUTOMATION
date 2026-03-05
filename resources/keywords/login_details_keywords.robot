@@ -3,13 +3,13 @@ Library      SeleniumLibrary
 Library      OperatingSystem  
 Resource     ../config/environment.robot
 Resource     ../locators/login_locators.robot
+Resource     ../config/global_variables.robot
 
 *** Keywords ***
 Login To Salesforce
-    ${PASSWORD}=    Get Variable Value    %{SALESFORCE_PASSWORD}
     Input Text                        ${USERNAME_FIELD}      ${USERNAME}
     Input Text                        ${PASSWORD_FIELD}      ${PASSWORD}
-    Click Element                     xpath=//input[@id='Login']
+    Click Button                      ${LOGIN_BUTTON}
    
     
     
