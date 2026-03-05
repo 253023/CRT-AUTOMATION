@@ -7,7 +7,7 @@ Resource    ../resources/keywords/login_details_keywords.robot
 Resource    ../resources/config/global_variables.robot
 Resource    ../resources/config/environment.robot
 
-Suite Setup    Login To Salesforce
+Suite Setup    OpenBrowser    about:blank    chrome
 Suite Teardown    Close Application
 
 # You can change imported library to "QWeb" if testing generic web application, not Salesforce.
