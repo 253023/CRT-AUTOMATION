@@ -19,9 +19,9 @@ User select resource from list
 Scoll to Element
   Scroll Element into View    ${related_tab}
    
-User select related tab
-  Click Element   xpath=//a[Contains(text()='Related')]
-   Wait Until Page Contains    Related
+# User select related tab
+#   Click Element   xpath=//a[Contains(text()='Related')]
+#    Wait Until Page Contains    Related
    
 # User select new next to service resource skill
 #   Click Element   xpath=//a[Contains(text()='Related')]
