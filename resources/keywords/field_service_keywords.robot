@@ -25,6 +25,3 @@ Then User verify Service resource skill is display
 And User verify and select new button display
   VerifyText     ${new_button}
   ClickText      ${new_button}
-# User select new next to service resource skill
-#   Click Element   xpath=//a[Contains(text()='Related')]
-#    Wait Until Page Contains    Related
