@@ -15,6 +15,7 @@ Process    Clients
     END
     ${CLIENTS}=    Create List     ${client_id[0]}    ${client_id[1]}
     Set Suite Variable          ${CLIENTS}
+    
 
 AC 3: Accept valid request and return HTTP 200 Accepted
 
