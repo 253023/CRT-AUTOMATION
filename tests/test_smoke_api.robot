@@ -1,12 +1,20 @@
 *** Settings ***
 Library                         RequestsLibrary
+Resource    ../resources/database/db_keywords.robot
 
 *** Variables ***
 ${BASE_URL}                      https://nyiap-external-qa.gw.mars-nonprod.com/nyiap-consumer
-@{CLIENTS}    21213370    20959407
+# @{CLIENTS}    21213370    20959407
 
                    
 *** Test Cases ***
+Process    Clients
+    @{all_clients}=    Get Client IDs from DB
+    FOR            ${client_id}    IN    @{all_clients}
+        Log        Processing Client ${client_id}
+    END
+    Set Suite Variable          ${client_id}
+
 AC 3: Accept valid request and return HTTP 200 Accepted
 
     [Documentation]             Validate POST prepareConsumerData returns HTTP 200 Accepted
