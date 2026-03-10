@@ -13,5 +13,4 @@ Get Client IDs from DB
 
     FOR          ${row}    IN     @{rows}
         ${client}=             Set Variable    ${row}[0]
-        Call Client API        ${client}
     END
