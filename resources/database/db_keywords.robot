@@ -10,7 +10,5 @@ Get Client IDs from DB
     ...         SELECT client_id from client_supplementary_info
     ...          ORDER BY DBMS_RANDOM.VALUE
     ...          FETCH FIRST 2 ROWS ONLY
-
-    FOR          ${row}    IN     @{rows}
-        ${client}=             Set Variable    ${row}[0]
-    END
+    Log To Console    ${rows}
+    [Return]          ${rows}
