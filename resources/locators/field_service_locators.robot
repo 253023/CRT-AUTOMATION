@@ -8,5 +8,5 @@ ${skill_set_field}    xpath=//input[@id='combobox-input-322']
 ${start_date}     xpath=//input[@id='input-292']  
 ${start_time}     xpath=//input[@id='combobox-input-296']
 ${save_btn}    xpath=//button[@class='slds-button slds-button_brand'][contains(text(),'Save')]    
-${today}=    Get Current Date    result_format=%m/%d/%Y
+${today}    Get Current Date    result_format=%m/%d/%Y
 ${current_time}    Get Current Date    result_format=%I:%M %p
