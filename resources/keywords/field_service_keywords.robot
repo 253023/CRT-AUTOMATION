@@ -30,7 +30,7 @@ And User click on related tab
  
 
 Then User verify and select Service resource skill is display
-  Click Element     ${Service_resource_skill_button}
+  Click Element     ${Service_resources}
   Log           clicking service skill button
 
 And User verify and select new button display
