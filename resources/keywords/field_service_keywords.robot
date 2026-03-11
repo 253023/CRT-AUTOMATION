@@ -30,6 +30,7 @@ And User click on related tab
  
 
 Then User verify and select Service resource skill is display
+  VerifyElement    ${service_resources}
   Click Element     ${service_resources}
   Log           clicking service skill button
 
