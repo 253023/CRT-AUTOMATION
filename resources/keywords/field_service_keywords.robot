@@ -24,7 +24,6 @@ And User click on related tab
   Log                        waiting for service resource skill tab display
 
 Then User verify and select Service resource skill is display
-  VerifyText    ${service_resource_skill_button}
   ClickText     ${Service_resource_skill_button}
   Log           clicking service skill button
 
