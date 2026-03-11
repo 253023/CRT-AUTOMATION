@@ -32,6 +32,7 @@ And user scroll down to related field
 
 And user click on related tab
     And User click on related tab
+   
 
 Then user verify and select service resource skill
     Then user verify and select service resource skill is display
