@@ -19,7 +19,7 @@ And User scroll to related field
 
 And User click on related tab
   ClickText    ${related_tab}
-  Wait Until Page Contains    Service Resources
+  Wait Until Page Contains    Service Resource Skill
 
 Then User verify and select Service resource skill is display
   VerifyText    ${service_resource_skill_button}
