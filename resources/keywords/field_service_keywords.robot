@@ -1,6 +1,4 @@
 *** Settings ***
-Library    QForce
-Library    String
 Library    SeleniumLibrary
 Resource    ../locators/field_service_locators.robot
 
