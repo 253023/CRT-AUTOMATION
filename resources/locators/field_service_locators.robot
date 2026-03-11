@@ -1,3 +1,5 @@
+*** Settings ***
+Library    SeleniumLibrary
 *** Variables ***  
 ${all_service_resource_page}    All Service Resources
 ${automation}    Automation
