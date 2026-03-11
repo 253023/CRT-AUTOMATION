@@ -13,17 +13,20 @@ When User verify and select automation resource
   VerifyText    ${automation}
   ClickText    ${automation}
   Log          Clicking Automation field
+  Sleep        5s
   
 And User scroll to related field
   ScrollTo   ${related_tab}
   Log        Scrolling to Related tab
-  Capture Page Screenshot
+  Sleep      5s
+
 
 And User click on related tab
   ClickText    ${related_tab}
   Wait Until Page Contains    Service Resource Skill
   Log                        waiting for service resource skill tab display
-  Capture Page Screenshot
+  Sleep                      5s
+ 
 
 Then User verify and select Service resource skill is display
   ClickText     ${Service_resource_skill_button}
