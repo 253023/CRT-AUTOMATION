@@ -14,7 +14,7 @@ When User verify and select automation resource
   ClickText    ${automation}
   Log          Clicking Automation field
   Sleep        5s
-  ScrollTo     ${related_tab}
+
   
 And User scroll to related field
   ScrollTo   ${related_tab}
@@ -24,13 +24,13 @@ And User scroll to related field
 
 
 And User click on related tab
-  ClickText    ${related_tab}
+  Click Element    ${related_tab}
   Log                        waiting for service resource skill tab display
   Sleep                      5s
  
 
 Then User verify and select Service resource skill is display
-  ClickText     ${Service_resource_skill_button}
+  Click Element     ${Service_resource_skill_button}
   Log           clicking service skill button
 
 And User verify and select new button display
