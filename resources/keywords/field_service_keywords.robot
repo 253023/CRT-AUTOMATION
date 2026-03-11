@@ -23,7 +23,6 @@ And User scroll to related field
 
 And User click on related tab
   ClickText    ${related_tab}
-  Wait Until Page Contains    Service Resource Skill
   Log                        waiting for service resource skill tab display
   Sleep                      5s
  
