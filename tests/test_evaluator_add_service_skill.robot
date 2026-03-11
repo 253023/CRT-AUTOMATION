@@ -18,7 +18,7 @@ Add Nurse Test
     And User click on related tab display
     Then user verify and select service resource skill is display
     And User verify and select new button display
-    And user fill up all fields for new service skill resource
+    And User enter new service resource skills fields
 
 
 *** Keywords ***
@@ -40,5 +40,5 @@ Then user verify and select service resource skill
 And user verify and select new new_button
     And User verify and select new button display
 
-And user fill up all fields for new service skill resource
+And User enter new service resource skills fields
     And user finish up new service skill resource 
