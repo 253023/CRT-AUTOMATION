@@ -19,6 +19,7 @@ And User scroll to related field
   ScrollTo   ${related_tab}
   Log        Scrolling to Related tab
   Sleep      5s
+  ScrollTo   ${related_tab}
 
 
 And User click on related tab
