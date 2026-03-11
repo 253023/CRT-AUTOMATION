@@ -12,7 +12,6 @@ Given user landed on all service resource page
 When User verify and select automation resource
   VerifyText    ${automation}
   ClickText    ${automation}
-  Wait Until Page Contains    Related
   
 And User scroll to related field
   ScrollTo   ${related_tab}
