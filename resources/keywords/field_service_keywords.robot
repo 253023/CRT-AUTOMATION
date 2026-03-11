@@ -14,6 +14,7 @@ When User verify and select automation resource
   ClickText    ${automation}
   
 And User scroll to related field
+  Wait Until Element Is Visible    ${related_tab}
   ScrollTo   ${related_tab}
 
 And User click on related tab
