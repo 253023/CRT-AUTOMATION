@@ -1,6 +1,7 @@
 *** Settings ***
 Library    QForce
 Library    String
+Library    SeleniumLibrary
 Resource    ../locators/field_service_locators.robot
 
             
@@ -11,12 +12,14 @@ Given user landed on all service resource page
 When User verify and select automation resource
   VerifyText    ${automation}
   ClickText    ${automation}
+  Wait Until Page Contains    Related
   
 And User scroll to related field
   ScrollTo   ${related_tab}
 
 And User click on related tab
   ClickText    ${related_tab}
+  Wait Until Page Contains    Service Resources
 
 Then User verify and select Service resource skill is display
   VerifyText    ${service_resource_skill_button}
