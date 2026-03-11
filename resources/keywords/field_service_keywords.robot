@@ -14,6 +14,7 @@ When User verify and select automation resource
   ClickText    ${automation}
   Log          Clicking Automation field
   Sleep        5s
+  ScrollTo     ${related_tab}
   
 And User scroll to related field
   ScrollTo   ${related_tab}
