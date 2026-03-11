@@ -40,7 +40,8 @@ And User verify and select new button display
   Log            verifying and select new skill button
 
 And User enter new service resource skills fields
-  QForce    Set Field Value    ${skill_set_field}    QANS Supervisor
+  ClickText    ${skill_set_field}
+  Sleep        5s
   Input Text     ${skill_set_field}    QANS Supervisor
   Input Text     ${start_date}                   ${today}
   Input Text     ${start_time}                   ${current_time}
