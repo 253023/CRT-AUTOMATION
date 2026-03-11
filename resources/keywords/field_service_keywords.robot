@@ -16,7 +16,7 @@ And User scroll to related field
   ScrollTo   ${related_tab}
 
 And User click on related tab
-  ClickIcon    ${related_tab}
+  ClickText    ${related_tab}
 
 Then User verify and select Service resource skill is display
   VerifyText    ${service_resource_skill_button}
