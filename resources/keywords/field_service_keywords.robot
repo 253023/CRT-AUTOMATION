@@ -38,3 +38,10 @@ And User verify and select new button display
   VerifyText     ${new_button}
   ClickText      ${new_button} 
   Log            verifying and select new skill button
+
+And User enter new service resource skills fields
+  Input Text     ${skill_set_field}    QANS Supervisor
+  Input Text     ${start_date}                   ${today}
+  Input Text     ${start_time}                   ${current_time}
+  Click Element      ${save_btn} 
+  Log            All new skill resource filled up
