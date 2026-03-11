@@ -14,7 +14,6 @@ When User verify and select automation resource
   
 And User scroll to related field
   ScrollTo   ${related_tab}
-  
 
 And User click on related tab
   ClickText    ${related_tab}
