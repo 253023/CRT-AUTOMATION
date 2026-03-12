@@ -1,5 +1,4 @@
 *** Settings ***
-Library    SeleniumLibrary
 Library    QForce
 Library    String
 Resource    ../locators/field_service_locators.robot
@@ -42,8 +41,8 @@ And User verify and select new button display
 And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   Sleep        5s
-  # Input Text     ${skill_set_field}    QANS Supervisor
-  Input Text     ${start_date}                   ${today}
-  Input Text     ${start_time}                   ${current_time}
+  TypeText    ${skill_set_field}    QANS Supervisor
+  TypeText     ${start_date}                   ${today}
+  TypeText     ${start_time}                   ${current_time}
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
