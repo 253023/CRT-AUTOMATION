@@ -5,8 +5,7 @@ Resource    ../locators/field_service_locators.robot
 
             
 *** Keywords *** ***
-${today}=    Get Current Date    result_format=%m/%d/%Y
-${current_time}=    Get Current Date    result_format=%I:%M %p
+
 Given user landed on all service resource page
     VerifyText    ${automation}
 
@@ -44,7 +43,7 @@ And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   Sleep        5s
   TypeText    ${skill_set_field}    QANS Supervisor
-  TypeText     ${start_date}                   ${today}
-  TypeText     ${start_time}                   ${current_time}
+  TypeText    ${start_date}        ${today}
+  TypeText     ${start_time}       ${current_time}
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
