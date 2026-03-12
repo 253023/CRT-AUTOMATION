@@ -42,7 +42,7 @@ And User verify and select new button display
 And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   Sleep        5s
-  Input Text     ${skill_set_field}    QANS Supervisor
+  # Input Text     ${skill_set_field}    QANS Supervisor
   Input Text     ${start_date}                   ${today}
   Input Text     ${start_time}                   ${current_time}
   Click Element      ${save_btn} 
