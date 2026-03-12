@@ -5,6 +5,8 @@ Resource    ../locators/field_service_locators.robot
 
             
 *** Keywords *** ***
+${today}=    Get Current Date    result_format=%m/%d/%Y
+${current_time}=    Get Current Date    result_format=%I:%M %p
 Given user landed on all service resource page
     VerifyText    ${automation}
 
