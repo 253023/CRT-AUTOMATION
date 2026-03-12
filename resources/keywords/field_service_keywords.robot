@@ -50,6 +50,5 @@ And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   ClickText    QANS Supervisor
   TypeText    ${start_date}        ${today}
-  TypeText     ${start_time}       ${current_time}
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
