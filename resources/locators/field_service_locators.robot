@@ -10,5 +10,3 @@ ${skill_set_field}    xpath=//input[contains(@placeholder,'Search Skills')]
 ${start_date}     xpath=//label[@class='slds-form-element__label'][contains(text(),'Date')]/following-sibling::div/input[@name='EffectiveStartDate']  
 ${start_time}     xpath=//input[@id='combobox-input-916']
 ${save_btn}    xpath=//button[@class='slds-button slds-button_brand'][contains(text(),'Save')]    
-${today}=    Get Current Date    result_format=%m/%d/%Y
-${current_time}=    Get Current Date    result_format=%I:%M %p
