@@ -1,4 +1,5 @@
 *** Settings ***
+Library    SeleniumLibrary
 Resource    ../resources/keywords/common.keywords.robot
 Resource    ../resources/keywords/field_service_keywords.robot
 Resource    ../resources/keywords/login_details_keywords.robot
