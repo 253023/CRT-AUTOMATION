@@ -1,11 +1,12 @@
 *** Settings ***
+Library    DateTime
 Library    QForce
 Library    String
 Resource    ../locators/field_service_locators.robot
 
             
-*** Keywords *** ***
-
+*** Keywords *** 
+  
 Given user landed on all service resource page
     VerifyText    ${automation}
 
@@ -40,6 +41,9 @@ And User verify and select new button display
   Log            verifying and select new skill button
 
 And User enter new service resource skills fields
+  ${today}=    Get Current Date    result_format=%m/%d/%Y
+  ${current_time}=    Get Current Date    result_format=%I:%M %p
+
   ClickText    ${skill_set_field}
   Sleep        5s
   TypeText    ${skill_set_field}    QANS Supervisor
