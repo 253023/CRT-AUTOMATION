@@ -50,7 +50,7 @@ And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   ClickText    QANS Supervisor
   TypeText    ${start_date}        ${today}
-  ${start_date_field}=             Get Field Value    ${start_date}
-  Should Not Be Empty              ${start_date_field}    msg=Start date should be auto-pupulated
+  ${start_time_field}=             Get Field Value    ${start_time}
+  Should Not Be Empty              ${start_time_field}    msg=Start time should be auto-pupulated
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
