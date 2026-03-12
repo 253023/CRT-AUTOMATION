@@ -48,7 +48,7 @@ And User enter new service resource skills fields
   Sleep        5s
   TypeText    ${skill_set_field}    QANS
   ClickText    ${skill_set_field}
-  ClickText                        QANS Supervisor
+  ClickText    QANS Supervisor
   TypeText    ${start_date}        ${today}
   TypeText     ${start_time}       ${current_time}
   Click Element      ${save_btn} 
