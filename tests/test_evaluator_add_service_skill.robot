@@ -47,5 +47,5 @@ And User fill up new service skill resource
 
 
 Then user validate and delete skill successfully
-    Then user successfully validate new skill added and delete
+    Then user successfully validate new skill added message
     
