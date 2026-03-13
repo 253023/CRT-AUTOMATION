@@ -36,7 +36,7 @@ Then User verify and select Service resource skill is display
   VerifyElement    ${service_resources}
   Click Element     ${service_resources}
    ${row_count}=     Get Element Count    ${service_resource_skill_table_rows}
-  IF                ${row_count} == 0:
+  IF                $row_count == 0:
        Log           No skill present in table
        Pass Execution                     No records found
   END
