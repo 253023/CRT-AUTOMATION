@@ -3,6 +3,7 @@ Library    DateTime
 Library    QForce
 Library    String
 Resource    ../locators/field_service_locators.robot
+Resource    ../config/global_variables.robot
 
             
 *** Keywords *** 
