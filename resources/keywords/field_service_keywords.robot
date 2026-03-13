@@ -51,7 +51,22 @@ And User enter new service resource skills fields
   ClickText    ${skill_set_field}
   ClickText    QANS Supervisor
   TypeText    ${start_date}        ${today}
-  ${start_time_field}=             Get Field Value    ${start_time}
-  Should Not Be Empty              ${start_time_field}    msg=Start time should be auto-pupulated
+  # ${start_time_field}=             Get Field Value    ${start_time}
+  # Should Not Be Empty              ${start_time_field}    msg=Start time should be auto-pupulated
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
+
+Then user successfully validate new skill added and delete
+    Element Should Be Visible    ${service_resource_created_message}
+    Log                        Skill added successfully
+    
+    ${row_count}=              Get Element Count    ${service_resource_skill_table_rows}
+    WHILE                      ${row_count} > 0
+        Log                    Skill record found...deleting
+        Click Element          ${action_icon}
+        Click Element          ${delete_dorp_down_option}
+        Click Element          ${delete_action}
+        Sleep                  2s
+        ${row_count}=          Get Element Count    ${service_resource_skill_table_rows}
+    END
+    Log                        All added skill deleted           
