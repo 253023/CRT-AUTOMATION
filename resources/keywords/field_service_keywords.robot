@@ -8,6 +8,7 @@ Resource    ../locators/field_service_locators.robot
 *** Keywords *** 
   
 Given user landed on all service resource page
+    ClickText    ${service_resource_tab}
     VerifyText    ${automation}
 
 When User verify and select automation resource
