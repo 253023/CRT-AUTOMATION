@@ -17,4 +17,6 @@ Login To Salesforce
     TypeSecret         ${PASSWORD_FIELD}      ${PASSWORD}
     ClickText          ${LOGIN_BUTTON}
     Sleep              10s
-   
+Close Browser once test completed
+    Close All Browsers
+    Log    Browser closed
