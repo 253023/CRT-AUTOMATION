@@ -6,7 +6,7 @@ Resource    ../resources/keywords/login_details_keywords.robot
 Resource    ../resources/config/global_variables.robot
 Resource    ../resources/config/environment.robot
 Suite Setup   Login To Salesforce
-Suite Teardown   Close Browser once test completed
+Suite Teardown    Close All Browsers
 
 
 *** Test Cases ***
