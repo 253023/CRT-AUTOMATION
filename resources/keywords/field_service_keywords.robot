@@ -50,7 +50,7 @@ And User enter new service resource skills fields
   Sleep        5s
   TypeText    ${skill_set_field}    QANS
   ClickText    ${skill_set_field}
-  ClickText    {resource_skill_name}
+  ClickText    ${skill_name}
   TypeText    ${start_date}        ${today}
   # ${start_time_field}=             Get Field Value    ${start_time}
   # Should Not Be Empty              ${start_time_field}    msg=Start time should be auto-pupulated
