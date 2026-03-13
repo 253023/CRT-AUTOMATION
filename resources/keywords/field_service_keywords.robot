@@ -79,6 +79,7 @@ And User enter new service resource skills fields
 Then user successfully validate new skill added and delete
     VerifyElement    ${service_resource_created_message}
     Log                        Skill added successfully
+    Sleep                      5s
     Click Element          ${action_icon}
     Click Element          ${delete_drop_down_option}
     Click Element          ${delete_action}
