@@ -16,4 +16,3 @@ ${delete_dorp_down_option}    xpath=//a[@title='Delete']
 ${delete_action}    xpath=//span[contains(text(),'Delete')]
 ${service_resource_skill_table_rows}    xpath=//table[@class='slds-table slds-table_header-fixed slds-table_bordered slds-table_edit slds-table_resizable-cols']//tbody/tr[2]
 ${service_resource_created_message}    xpath=//span[@class='toastMessage slds-text-heading--small forceActionsText']
-${resource_skill_name}    QANS Manager
