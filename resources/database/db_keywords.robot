@@ -11,4 +11,4 @@ Get Client IDs from DB
     ...          ORDER BY DBMS_RANDOM.VALUE
     ...          FETCH FIRST 2 ROWS ONLY
     Log To Console    ${rows}
-    [Return]          ${rows}
+    [RETURN]          ${rows}
