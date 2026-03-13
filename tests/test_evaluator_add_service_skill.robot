@@ -23,8 +23,6 @@ Add Nurse Test
 
 
 *** Keywords ***
-
-
 Given user on a field Screen
      Given user landed on all service resource page
 
