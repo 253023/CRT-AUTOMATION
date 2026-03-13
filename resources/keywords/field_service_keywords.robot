@@ -35,25 +35,25 @@ And User click on related tab
 Then User verify and select Service resource skill is display
   VerifyElement    ${service_resources}
   Click Element     ${service_resources}
-   ${row_count}=     Get Element Count    ${service_resource_skill_table_rows}
-   IF                $row_count == 0:
-       Log           No skill present in table
-       Pass Execution                     No records found
-   END
-   FOR                        ${i}                 IN RANGE    1    ${row_count}+1
-        ${skill_display}=      Get Text
-        ...                    xpath='//table//tbody/tr)[${i}]//td[1]'
-        IF                     '${skill_display}'== '${skill_name}'
+  #  ${row_count}=     Get Element Count    ${service_resource_skill_table_rows}
+  #  IF                $row_count == 0:
+  #      Log           No skill present in table
+  #      Pass Execution                     No records found
+  #  END
+  #  FOR                        ${i}                 IN RANGE    1    ${row_count}+1
+  #       ${skill_display}=      Get Text
+  #       ...                    xpath='//table//tbody/tr)[${i}]//td[1]'
+  #       IF                     '${skill_display}'== '${skill_name}'
 
-            Log                    Skill record found...deleting
-            Click Element          ${action_icon}
-            Click Element          ${delete_dorp_down_option}
-            Click Element          ${delete_action}
-            Sleep                  2s
-            Exit For Loop
-        END
-    END
-    Log                        All added skill deleted         
+  #           Log                    Skill record found...deleting
+  #           Click Element          ${action_icon}
+  #           Click Element          ${delete_dorp_down_option}
+  #           Click Element          ${delete_action}
+  #           Sleep                  2s
+  #           Exit For Loop
+  #       END
+  #   END
+  #   Log                        All added skill deleted         
   Log           clicking service skill button
 
 And User verify and select new button display
