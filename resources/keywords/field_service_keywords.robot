@@ -47,7 +47,7 @@ Then User verify and select Service resource skill is display
 
   #           Log                    Skill record found...deleting
   #           Click Element          ${action_icon}
-  #           Click Element          ${delete_dorp_down_option}
+  #           Click Element          ${delete_drop_down_option}
   #           Click Element          ${delete_action}
   #           Sleep                  2s
   #           Exit For Loop
@@ -79,5 +79,9 @@ And User enter new service resource skills fields
 Then user successfully validate new skill added and delete
     VerifyElement    ${service_resource_created_message}
     Log                        Skill added successfully
+    Click Element          ${action_icon}
+    Click Element          ${delete_drop_down_option}
+    Click Element          ${delete_action}
+    Sleep                  2s
     
      
