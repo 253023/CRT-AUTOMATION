@@ -8,7 +8,7 @@ Resource    ../resources/config/environment.robot
 
 
 Suite Setup   Login To Salesforce
-Suite Teardown    Close Browser
+Suite Teardown   Close All Browsers
 
 
 *** Test Cases ***
