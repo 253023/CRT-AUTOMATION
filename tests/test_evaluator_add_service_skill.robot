@@ -20,6 +20,7 @@ Add Nurse Test
     Then user verify and select service resource skill is display
     And User verify and select new button display
     And User fill up new service skill resource
+    Then user validate and delete skill successfully
 
 
 *** Keywords ***
@@ -43,3 +44,8 @@ And user verify and select new new_button
 
 And User fill up new service skill resource
     And User enter new service resource skills fields
+
+
+Then user validate and delete skill successfully
+    Then user successfully validate new skill added and delete
+    
