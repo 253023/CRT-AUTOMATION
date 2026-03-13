@@ -57,7 +57,7 @@ And User enter new service resource skills fields
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
 
-Then user successfully validate new skill added and delete
+Then user successfully validate new skill added message
     VerifyElement    ${service_resource_created_message}
     Log                        Skill added successfully
     
