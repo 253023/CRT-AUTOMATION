@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 *** Variables ***  
 ${all_service_resource_page}    All Service Resources
+${service_resource_tab}    xpath=//a[@title='Service Resources']/span
 ${automation}    Automation
 ${service_resources}    xpath=//span[@title='Service Resource Skills']
 ${related_tab}          xpath=//a[@id='relatedListsTab__item']
