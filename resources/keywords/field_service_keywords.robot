@@ -58,6 +58,11 @@ And User enter new service resource skills fields
 Then user successfully validate new skill added message
     VerifyElement    ${service_resource_created_message}
     Log                        Skill added successfully
+    ClickCheckbox              Select Item 1    on    partial_match=False
+    ClickText         Show Actions      anchor=Show quick filters
+	  ClickText         Delete
+	  UseModal          On
+	  ClickText         Delete
     
     
      
