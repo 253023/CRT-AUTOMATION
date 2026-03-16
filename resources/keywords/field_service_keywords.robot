@@ -63,6 +63,9 @@ Then user successfully validate new skill added message
 	  ClickText         Delete
 	  UseModal          On
 	  ClickText         Delete
+    ClickText         Show menu
+	  ClickText         Logout
+	  CloseWindow
     
     
      
