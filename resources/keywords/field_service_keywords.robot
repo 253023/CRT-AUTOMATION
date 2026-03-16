@@ -55,7 +55,7 @@ And User enter new service resource skills fields
   Click Element      ${save_btn} 
   Log            All new skill resource filled up
 
-Then user successfully validate new skill added message
+Then user successfully validate new skill added message and then delete the skill
     VerifyElement    ${service_resource_created_message}
     Log                        Skill added successfully
     ClickCheckbox              Select Item 1    on    partial_match=False
